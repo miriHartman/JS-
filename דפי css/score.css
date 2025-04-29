@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    106.5deg,
+    rgba(255, 215, 185, 0.91) 23%,
+    rgba(223, 159, 247, 0.8) 93%
+  );
+}
+
+a {
+  font: 2rem "Fira Sans", sans-serif;
+  text-decoration: none;
+  color: #000;
+  padding-bottom: 0.3rem;
+}
+
+a:hover {
+  background-image: url("data:image/svg+xml,<svg  xmlns='http://www.w3.org/2000/svg' width='300' height='60' fill='black' viewBox='0 0 300 60'><path d='M131 .6c-1.4.2-5.6.9-9.5 1.5-15.3 2.5-27.4 7.7-55.7 23.7-22 12.6-35 16.8-54.8 18l-10.5.7-.3 7.9-.3 7.9 11.8-.6C36 58.5 51.2 53.3 79 37c28.7-16.9 43-21.1 71-21.1s42.3 4.2 71 21.1c27.8 16.3 43 21.5 67.3 22.7l11.8.6-.3-7.9-.3-7.9-10.5-.7c-19.8-1.2-32.8-5.4-54.8-18C207 10.4 197.3 6.1 181 2.4 174.7.9 136.9-.4 131 .6z'/></svg>");
+  background-position: 0% 100%;
+  background-repeat: repeat-x;
+  background-size: 25px 5px;
+  animation: animateSquiggles 0.3s linear infinite;
+}
+
+@keyframes animateSquiggles {
+  from {
+    background-position: 0 100%;
+  }
+  to {
+    background-position: -25px 100%;
+  }
+}

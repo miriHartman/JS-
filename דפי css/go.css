@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+    align-items: center;
+    text-align: center;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #b7ef99;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, hsl(139, 73%, 57%), #ff357a);
+  background: -moz-linear-gradient(to top, hsl(139, 73%, 57%) #ff357a);
+  background: -o-linear-gradient(to top,hsl(139, 73%, 57%), #ff357a);
+  background: linear-gradient(to top, hsl(139, 73%, 57%), #ff357a);
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  font: 2rem "Fira Sans", sans-serif;
+  text-decoration: none;
+  color: #000;
+  padding-bottom: 0.3rem;
+}
+
+a:hover {
+  background-image: url("data:image/svg+xml,<svg  xmlns='http://www.w3.org/2000/svg' width='300' height='60' fill='black' viewBox='0 0 300 60'><path d='M131 .6c-1.4.2-5.6.9-9.5 1.5-15.3 2.5-27.4 7.7-55.7 23.7-22 12.6-35 16.8-54.8 18l-10.5.7-.3 7.9-.3 7.9 11.8-.6C36 58.5 51.2 53.3 79 37c28.7-16.9 43-21.1 71-21.1s42.3 4.2 71 21.1c27.8 16.3 43 21.5 67.3 22.7l11.8.6-.3-7.9-.3-7.9-10.5-.7c-19.8-1.2-32.8-5.4-54.8-18C207 10.4 197.3 6.1 181 2.4 174.7.9 136.9-.4 131 .6z'/></svg>");
+  background-position: 0% 100%;
+  background-repeat: repeat-x;
+  background-size: 25px 5px;
+  animation: animateSquiggles 0.3s linear infinite;
+}
+
+@keyframes animateSquiggles {
+  from {
+    background-position: 0 100%;
+  }
+  to {
+    background-position: -25px 100%;
+  }
+}
+#div1{ 
+     display: grid;
+     grid-template-columns:15% 30% 30% 15%;
+    grid-template-rows:30% 20% 20% 30%; 
+ } 
+.e{
+    
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#s{
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#b{
+    grid-row: 2/3;
+    grid-column: 2;
+}
+#d{
+    grid-row:2 /3;
+    grid-column:3;
+}
+#s{
+    grid-row:0/1;
+    grid-column:2/4 ;
+}
+a{
+    grid-row:5;
+    grid-column: 2/4;
+}
